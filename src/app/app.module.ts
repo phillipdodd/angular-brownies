@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { MatSliderModule } from '@angular/material/slider';
 
@@ -29,6 +30,8 @@ import { PageaComponent } from './pagea/pagea.component';
 import { PagebComponent } from './pageb/pageb.component';
 import { PagecComponent } from './pagec/pagec.component';
 import { NavButtonComponent } from './nav-button/nav-button.component';
+import { UserDisplayComponent } from './user-display/user-display.component';
+import { AddUserFormComponent } from './add-user-form/add-user-form.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +40,14 @@ import { NavButtonComponent } from './nav-button/nav-button.component';
     PageaComponent,
     PagebComponent,
     PagecComponent,
-    NavButtonComponent
+    NavButtonComponent,
+    UserDisplayComponent,
+    AddUserFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NoopAnimationsModule,
     MatSliderModule,
     LayoutModule,

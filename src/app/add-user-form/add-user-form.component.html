@@ -1,0 +1,13 @@
+<div class="add-user">
+    <form (ngSubmit)="onSubmit()" #addUser="ngForm">
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="Name"
+                required
+                [(ngModel)]="model.name" 
+                name="name">
+        </mat-form-field>
+        <button mat-flat-button color="primary" type="submit">Submit</button>
+    </form>
+</div>
