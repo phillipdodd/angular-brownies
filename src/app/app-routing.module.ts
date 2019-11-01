@@ -6,9 +6,9 @@ import { PagecComponent} from './pagec/pagec.component'
 
 const routes: Routes = [
   { path: '', component: PageaComponent},
-  { path: '/pagea', component: PageaComponent},
-  { path: '/pageb', component: PagebComponent},
-  { path: '/pagec', component: PagecComponent}
+  { path: 'pagea', component: PageaComponent},
+  { path: 'pageb', component: PagebComponent},
+  { path: 'pagec', component: PagecComponent}
 ];
 
 @NgModule({
