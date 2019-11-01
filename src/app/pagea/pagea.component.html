@@ -1,1 +1,6 @@
 <p>Welcome to Page A!</p>
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.doot}}
+  </li>
+</ul>
